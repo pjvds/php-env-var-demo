@@ -1,0 +1,8 @@
+box: wercker/php
+services:
+    - wercker/mysql
+build:
+  steps:
+    - script:
+        name: Print info
+        code: php main.php
